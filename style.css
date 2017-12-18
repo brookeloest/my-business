@@ -1,0 +1,57 @@
+/* Styles go here */
+
+body {
+  background-color:lightgrey;
+  font-family:verdana,sans-serif;
+}
+
+h2, h3 {
+  margin:0 0 -.7em 0;
+
+}
+
+.column-layout {
+  max-width: 800px;
+  background-color:white;
+  margin: 40px auto 0 auto;
+  line-height: 1.65;
+  padding: 20px 40px;
+  display: flex;
+  
+
+}
+
+.main-column {
+  flex:4;
+  order:2;
+}
+
+.sidebar-one {
+  
+    flex:1;
+    order:1;
+}
+
+.sidebar-two {
+  flex:1;
+  order:3;
+}
+
+.call-outs-container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  display:flex;
+  justify-content: space-between;
+ }
+
+.call-out {
+  padding:20px;
+  box-sizing:border-box;
+  margin-bottom:20px;
+  width:30%;
+
+}
+
+.call-out:nth-child(1) {background-color:blue;}
+
+.call-out:nth-child(2) {background-color:green;}
