@@ -8,7 +8,7 @@
 <body>
   
   <div class="menu-layout">
-    <div class="menu-item"> Home</div>
+    <div class="menu-item"><a href="main.html">home </a></div>
     <div class="menu-item"> Products and services</div>
     <div class="menu-item"> Contact Us</div>
     
@@ -33,6 +33,7 @@
 
     </div>
   </div>
+   <div id="map"></div>
 
 
   <div class="call-outs-container">
@@ -40,15 +41,35 @@
       <h4>Costume</h4>
       <p>We have all diffrent types of costumes we have scary, fairytale, @DISNEY, @MARVEL and more... </p>
     </div>
-
    
-    <div class="call-out">
+    
+
+
+
+  
+   <div class="call-out">
       <h4>Mesurements </h4>
       <p>You can either buy a size or for $20 more you can give us exact mesurements of your horse 
       so it fits perfectly</p>
     </div>
   </div>
+   <script>
+      function initMap() {
+        var uluru = {lat:43.7813167, lng:-88.4303183};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+   <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0e0W1ICK1sCU8cR--3xgrEIOrQEsDrvU&callback=initMap">
+    </script>
    
 </body>
 
 </html>
+
