@@ -32,21 +32,35 @@
 </ul>
     </div>
   </div>
+ <div id="buttondiv"><button id="hidebutton" onclick="hideOffers()">Hide Offers</button></div>
 
 
-  <div class="call-outs-container">
+  <div id="specialoffers" class="call-outs-container">
     <div class="call-out">
-      <h4>Costume</h4>
-      <p>We have all diffrent types of costumes we have scary, fairytale, @DISNEY, @MARVEL and more... </p>
+      <h4>Special Offer 1</h4>
+      <p>25% off all @DISNEY and @MARVEL costumes with 
+      Code: SAVE</p>
     </div>
 
    
     <div class="call-out">
-      <h4>Mesurements </h4>
-      <p>You can either buy a size or for $20 more you can give us exact mesurements of your horse 
+      <h4>Special Offer 2 </h4>
+      <p>You can either buy a size or for a limited time only for $20 more you can give us exact mesurements of your horse 
       so it fits perfectly</p>
     </div>
   </div>
+  <div class="box2"></div>
+      
+    <script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
    
 </body>
 
