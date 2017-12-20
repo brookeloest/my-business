@@ -109,3 +109,7 @@ h2, h3 {
 .call-out:nth-child(1) {background-color:purple;}
 
 .call-out:nth-child(2) {background-color:orange;}
+
+#buttondiv {
+  text-align:center;
+}
